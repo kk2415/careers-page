@@ -1,13 +1,47 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap">
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="ad-container">광고 컨테이너</div>
+  <div class="search-container">
+    <p>30개의 채용공고가 있습니다.</p>
+    <div class="search-input">
+      <input type="text" placeholder="검색어를 입력하세요...">
+      <button>검색</button>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <div class="filter-container">
+      <p>회사명</p>
+      <div class="checkboxes">
+        <label><input type="checkbox"> 카카오</label>
+        <label><input type="checkbox"> 네이버</label>
+        <label><input type="checkbox"> 라인</label>
+        <label><input type="checkbox"> 배달의 민족</label>
+        <label><input type="checkbox"> 토스</label>
+      </div>
+    </div>
+    <div class="list-container">
+      <div class="list-item">
+        <img src="logo1.png" alt="로고 이미지">
+        <div class="item-details">
+          <h3>제목</h3>
+          <p>제공기간</p>
+          <p class="group-name">그룹 이름</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ad-container">광고 컨테이너</div>
+</div>
+</body>
 </html>
