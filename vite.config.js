@@ -1,5 +1,5 @@
 // vite.config.js
 
 export default {
-    base: '/githubpage-demo/'
+    base: '/careers-page/'
 };
