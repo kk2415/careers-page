@@ -9,39 +9,39 @@
   <link rel="stylesheet" href="src/styles.css">
 </head>
 <body>
-<div class="container">
-  <div class="ad-container">광고 컨테이너</div>
-  <div class="search-container">
-    <p>30개의 채용공고가 있습니다.</p>
-    <div class="search-input">
-      <input type="text" placeholder="검색어를 입력하세요...">
-      <button>검색</button>
-    </div>
-  </div>
-
-  <div class="main-container">
-    <div class="filter-container">
-      <p>회사명</p>
-      <div class="checkboxes">
-        <label><input type="checkbox"> 카카오</label>
-        <label><input type="checkbox"> 네이버</label>
-        <label><input type="checkbox"> 라인</label>
-        <label><input type="checkbox"> 배달의 민족</label>
-        <label><input type="checkbox"> 토스</label>
+  <div class="container">
+    <div class="ad-container">광고 컨테이너</div>
+    <div class="search-container">
+      <p>30개의 채용공고가 있습니다.</p>
+      <div class="search-input">
+        <input type="text" placeholder="검색어를 입력하세요...">
+        <button>검색</button>
       </div>
     </div>
-    <div class="list-container">
-      <div class="list-item">
-        <img src="logo1.png" alt="로고 이미지">
-        <div class="item-details">
-          <h3>제목</h3>
-          <p>제공기간</p>
-          <p class="group-name">그룹 이름</p>
+
+    <div class="main-container">
+      <div class="filter-container">
+        <p>회사명</p>
+        <div class="checkboxes">
+          <label><input type="checkbox" id="checkbox-all" value="" checked> 전체</label>
+          <label><input type="checkbox" id="checkbox-kakao" value="KAKAO"> 카카오</label>
+          <label><input type="checkbox" id="checkbox-bamin" value="BAMIN"> 배달의 민족</label>
+          <label><input type="checkbox" id="checkbox-line" value="LINE"> 라인</label>
+          <label><input type="checkbox" id="checkbox-naver" value="NAVER"> 네이버</label>
+          <label><input type="checkbox" id="checkbox-toss" value="TOSS"> 토스</label>
+          <label><input type="checkbox" id="checkbox-carrot" value="CARROT_MARKET"> 당근마켓</label>
+          <label><input type="checkbox" id="checkbox-bucket-place" value="BUCKET_PLACE"> 오늘의 집</label>
+          <label><input type="checkbox" id="checkbox-yanolja" value="YANOLJA"> 야놀자</label>
+          <label><input type="checkbox" id="checkbox-socar" value="SOCAR"> 쏘카</label>
+          <label><input type="checkbox" id="checkbox-sk" value="SK"> SK</label>
         </div>
       </div>
+      <div class="list-container">
+      </div>
     </div>
+    <div class="ad-container">광고 컨테이너</div>
   </div>
-  <div class="ad-container">광고 컨테이너</div>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="src/job/index.js" type="module"></script>
 </body>
 </html>
