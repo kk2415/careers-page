@@ -4,13 +4,10 @@ export const handleCheckboxChange = async (event) => {
     const checkedCompany = event.target.value;
 
     try {
-        // list-container 초기화
-        const listContainer = document.querySelector('.list-container');
-        listContainer.innerHTML = '';
-
-        await fetchJobs(checkedCompany)
+        await fetchJobs(checkedCompany, '')
     } catch (error) {
         console.error('Error fetching data:', error);
+        throw error
     }
 
     // 다른 checkbox들의 선택 해제
