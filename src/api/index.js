@@ -4,6 +4,7 @@ export const HttpClient = (() => {
     const PUT = "PUT"
     const PATCH = "PATCH"
     const DELETE = "DELETE"
+    const API_URL = import.meta.env.VITE_API_URL
 
     const config = {
         headers: {
@@ -13,7 +14,7 @@ export const HttpClient = (() => {
 
     const get = async (path) => {
         try {
-            return await axios.get(`http://localhost:8080${path}`, config)
+            return await axios.get(`${API_URL}${path}`, config)
         } catch (error) {
             console.error("error: ", error);
             throw error;
@@ -22,7 +23,7 @@ export const HttpClient = (() => {
 
     const post = (path, data) => {
         try {
-            return axios.post(`http://localhost:8080${path}`, data, config)
+            return axios.post(`${API_URL}${path}`, data, config)
         } catch (error) {
             console.error("error: ", error);
             throw error;
@@ -31,7 +32,7 @@ export const HttpClient = (() => {
 
     const put = (path, data) => {
         try {
-            return axios.put(`http://localhost:8080${path}`, data, config)
+            return axios.put(`${API_URL}${path}`, data, config)
         } catch (error) {
             console.error("error: ", error);
             throw error;
@@ -40,7 +41,7 @@ export const HttpClient = (() => {
 
     const patch = (path, data) => {
         try {
-            return axios.patch(`http://localhost:8080${path}`, data, config)
+            return axios.patch(`${API_URL}${path}`, data, config)
         } catch (error) {
             console.error("error: ", error);
             throw error;
@@ -49,7 +50,7 @@ export const HttpClient = (() => {
 
     const deleting = (path) => {
         try {
-            return axios.delete(`http://localhost:8080${path}`, config)
+            return axios.delete(`${API_URL}${path}`, config)
         } catch (error) {
             console.error("error: ", error);
             throw error;
